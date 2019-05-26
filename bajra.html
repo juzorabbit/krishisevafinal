@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>KrishiSeva</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="layout/styles/index.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="layout/styles/mango.css">
+
+
+<!-- Top Background Image Wrapper -->
+<div class="bgded" style="background-image:url('images/demo/backgrounds/farm.jpg');">
+
+  <div class="wrapper overlay">
+    <header id="header" class="hoc clear">
+      <nav id="mainav" class="clear">
+        <!-- ################################################################################################ -->
+        <ul class="clear">
+          <li class="active"><a href="index.html">मुख्य पृष्ठ  </a></li>
+          <li><a class="drop" href="#">हमारे बारे में </a>
+            <ul>
+              <li><a href="pages/gallery.html">Gallery</a></li>
+
+            </ul>
+          </li>
+          <li><a class="drop" href="#">ज्ञान भंडार </a>
+            <ul>
+              <li><a href="#">शासकीय योजनाओं की जानकारी </a></li>
+              <li><a class="yojana.html" href="#">फसल सलाहकार </a>
+                <ul>
+                  <li><a href="dhan.html">धान </a></li>
+                  <li><a href="makka.html">मक्का </a></li>
+                  <li><a href="gehu.html">गेहूं </a></li>
+                  <li><a href="jwar.html">ज्वार</a></li>
+                  <li><a href="bajra.html">बाजरा</a></li>
+                    <li><a href="sarso.html">सरसों </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+            <li><a href="diseases.html">प्रमुख समस्याएं एवं निवारण  </a>
+
+          </li>
+
+          <li><a class= "drop" href="#">बागवानी की उन्नत विधियां </a>
+              <ul>
+              <li><a href="mango.html">आम </a></li>
+              <li><a href="litchi.html">लीची</a></li>
+              <li><a href="orange.html">संतरा</a></li>
+               <li><a href="kela.html">केला</a></li>
+                <li><a href="guava.html">अमरुद </a></li>
+            </ul>
+          </li>
+
+          <li><a class= "drop" href="#">कृषि प्रणाली और तकनीक </a>
+          <ul>
+
+              <li><a href="polyhouse.html">पॉली हाउस </a></li>
+              <li><a href="polytunnels.html">पॉली टनल </a></li>
+              <li><a href="machinery.html">कृषि यंत्र </a></li>
+          </ul>
+        </li>
+          <li><a href="http://localhost:3000/">संपर्क करें </a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+  </div>
+</div>
+</head>
+
+<body>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><b>खेत की तैयारी </b></button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')"><b>सिंचाई प्रबन्धन</b></button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')"><b>फसल सुरक्षा </b></button>
+  <button class="tablinks" onclick="openCity(event, 'Japan')"><b>बुआई का समय</b></button>
+  <button class="tablinks" onclick="openCity(event, 'China')"><b>बीज दर एवं बुआइ </b></button>
+
+</div>
+
+<div id="London" class="tabcontent"><br>
+  <h3><b>खेत की तैयारी</b></h3>
+  <p>दो-तीन बार कल्टीवेटर से जुताई के बाद पाटा लगाकर मिट्टी भुरभुरा बना लेना चाहिए।
+</p>
+</div>
+
+<div id="Paris" class="tabcontent"><br>
+  <h3><b>सिंचाई प्रबन्धन</b></h3>
+  <p>खरीफ बाजरा में बाली निकलते समय नमी अत्यन्त आवश्यक हैं वर्षा नहीं होने पर एक सिंचाई अवश्य करना चाहिए। जायद या गरमा बाजरे में  3-5 सिंचाई मौसमानुसार करना चाहिए।
+
+</p>
+</div>
+
+
+<div id="Tokyo" class="tabcontent"><br>
+  <h3><b>फसल सुरक्षा </b></h3>
+  <p>फफुंद जनित बीमारियों से बचाव हेतु बीजोपचार थीरम, केप्टाॅंन या वेविस्टीन नामक दवा के 2 ग्राम प्रति कि.ग्रा.ं बीज दर से करना चाहिये।
+
+</p>
+</div>
+
+<div id="Japan" class="tabcontent"><br>
+  <h3><b>बुआई का समय</b></h3>
+  <p>खरीफ बाजरा जुलाई के अंतिम सप्ताह से 15 अगस्त तक, जबकि जायद बाजरा की जनवरी-फरवरी में बुआई करते हैं ।
+
+</p>
+  </div>
+
+  <div id="China" class="tabcontent"><br>
+  <h3><b>बीज दर एवं बुआइ</b></h3>
+  <p>5 किग्रा./हे. बीज, 45 सेंमी. की दूरी पर मेड़ पर करें तथा पौधे से पौधे की दूरी 12-15 सें.मी. रखना चाहिए।
+</p>
+
+  </div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+</body>
+</html>
